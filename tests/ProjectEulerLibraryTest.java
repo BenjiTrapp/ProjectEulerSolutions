@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
-public class LibraryTest
+public class ProjectEulerLibraryTest
 {
 
     @Test
