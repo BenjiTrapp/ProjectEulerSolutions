@@ -2,7 +2,7 @@
 
 ![Euler](http://i.giphy.com/8qUjDf9PZlHZ6.gif)
 
-* Currently there are only some Java-Stuff around
+* Currently there is only some Java-Stuff around
 * Some othere stuff (Python, Octave, MatLab, Erlang, Clojure and what ever, who cares?) will be added later .... maybe
 
 ### Nickname ###
