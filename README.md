@@ -3,7 +3,7 @@
 ![Euler](http://i.giphy.com/8qUjDf9PZlHZ6.gif)
 
 * Currently there is only some Java-Stuff around
-* Some othere stuff (Python, Octave, MatLab, Erlang, Clojure and what ever, who cares?) will be added later .... maybe
+* Some other stuff (Python, Octave, MatLab, Erlang, Clojure and what ever => who cares?) will be added later ... maybe
 
 ### Nickname ###
 ![Project Euler Nickname](https://projecteuler.net/profile/Nyctophobia.png)
