@@ -1,7 +1,7 @@
-import static org.junit.jupiter.api.Assertions.assertEquals;
+package problem_solutions;
 
-import org.junit.jupiter.api.Test;
-import problem_solutions.*;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 public final class EulerSolutionsTest {
     /*
@@ -10,7 +10,6 @@ public final class EulerSolutionsTest {
     *
     * Only run this test, if you know what you are doing!
     */
-
 
     @Test
     public void testP001() {

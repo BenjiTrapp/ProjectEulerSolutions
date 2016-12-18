@@ -1,9 +1,11 @@
+package utils;
 
 import utils.Fraction;
 import org.junit.Test;
 
 import java.math.BigInteger;
 
+import static java.math.BigInteger.*;
 import static org.junit.Assert.*;
 
 public class FractionTest {
@@ -18,11 +20,11 @@ public class FractionTest {
 
     @Test(expected = ArithmeticException.class)
     public void testCreationOfFractionWithDivZeroFailsWithException() {
-        //Given - When
+        //Given
         Fraction divZero;
 
         // When denominator is Zero => Then an exception should be triggered
-        divZero = new Fraction(new BigInteger("42"), BigInteger.ZERO);
+        divZero = new Fraction(new BigInteger("42"), ZERO);
 
         // Otherwise no exception was triggered
         fail("Arithmetic for DivZero Fraction was NOT triggered! Test Failed");
@@ -31,8 +33,8 @@ public class FractionTest {
     @Test
     public void testEqualityOfFraction() {
         //Given
-        Fraction f1 = new Fraction(BigInteger.ONE, BigInteger.TEN);
-        Fraction f2 = new Fraction(BigInteger.ONE, BigInteger.TEN);
+        Fraction f1 = new Fraction(ONE, TEN);
+        Fraction f2 = new Fraction(ONE, TEN);
 
         //When
         boolean result = f1.equals(f2);
@@ -44,7 +46,7 @@ public class FractionTest {
     @Test
     public void testGCDUsedByCreationOfFraction() {
         //Given
-        Fraction f1 = null;
+        Fraction f1;
 
         //When
         f1 = new Fraction(new BigInteger("2"), new BigInteger("8"));
@@ -55,10 +57,10 @@ public class FractionTest {
 
 
     @Test
-    public void testkInequalityOfFraction() {
+    public void testInequalityOfFraction() {
         //Given
-        Fraction f1 = new Fraction(BigInteger.ONE, BigInteger.TEN);
-        Fraction f2 = new Fraction(BigInteger.TEN, BigInteger.ONE);
+        Fraction f1 = new Fraction(ONE, TEN);
+        Fraction f2 = new Fraction(TEN, ONE);
 
         //When
         boolean result = f1.equals(f2);
@@ -81,7 +83,7 @@ public class FractionTest {
     }
 
     @Test
-    public void testSubstractionOfTwoFractions() {
+    public void testSubtractionOfTwoFractions() {
         //Given
         Fraction f1 = new Fraction(new BigInteger("1"), new BigInteger("4"));
         Fraction f2 = new Fraction(new BigInteger("1"), new BigInteger("2"));
@@ -94,7 +96,7 @@ public class FractionTest {
     }
 
     @Test
-    public void testMultiplikationnOfTwoFractions() {
+    public void testMultiplicationOfTwoFractions() {
         //Given
         Fraction f1 = new Fraction(new BigInteger("1"), new BigInteger("4"));
         Fraction f2 = new Fraction(new BigInteger("1"), new BigInteger("4"));
